@@ -17,6 +17,7 @@ hacker   = 'hacker.jpg'
 app = Flask(__name__)
 dash_app = dash.Dash(__name__, server=app, url_base_pathname='/')
 server = dash_app.server
+server.debug = True
 
 imagens = [
     {'url': plane, 'probabilidade': 0.1},
