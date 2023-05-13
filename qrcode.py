@@ -47,8 +47,9 @@ dash_app.layout = html.Div([
 def exibir_imagem(n_clicks):
     if n_clicks:
         url = selecionar_imagem()
-        print(url)
-        return dash_app.get_asset_url(url)
+        #print(url)
+        #dash_app.get_asset_url(url)
+        return url
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=False)
